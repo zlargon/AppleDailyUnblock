@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Appledaily Unblocker",
+  "description": "Unblock Appledaily content without login",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://tw.news.appledaily.com/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "permissions": [
+    "tabs", "https://tw.news.appledaily.com/*"
+  ]
+}
